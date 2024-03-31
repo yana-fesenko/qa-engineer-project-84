@@ -6,7 +6,7 @@
   prerequisites: |
     Открыта страница магазина с возможностью поиска слева
   test-data: |
-   orange
+   ключевое слово = orange
   steps:
     - Вводим orange
   expected-result: |
@@ -19,7 +19,7 @@
   prerequisites:
     Открыта страница магазина с возможностью поиска слева
   test-data: |
-    timberland
+   ключевое слово timberland
   steps:
     - Вводим timberland
   expected-result: |
@@ -32,7 +32,7 @@
   prerequisites: |
     Открыта страница магазина с возможностью выбора категории товаров
   test-data: |
-   scincare
+   категория = scincare
   steps:
     - Выбираем scincare
   expected-result: |
@@ -45,9 +45,60 @@
   prerequisites: |
     Открыта страница магазина с возможностью выбора категории товаров
   test-data: |
-   smartphones
+   категория = smartphones
   steps:
     - Выбираем smartphones
   expected-result: |
     Пользователь должен увидеть товары категории smartphones
+    
+- summary: |
+    Проверка поиска товаров по категории laptops
+  requirement: |
+    При выборе определенной категории появляются товары из выбранной категории
+  prerequisites: |
+    Открыта страница магазина с возможностью выбора категории товаров
+  test-data: |
+   категория = laptops
+  steps:
+    - Выбираем laptops
+  expected-result: |
+    Пользователь должен увидеть товары категории laptops
 
+- summary: |
+    Проверка поиска товаров по категории fragrances
+  requirement: |
+    При выборе определенной категории появляются товары из выбранной категории
+  prerequisites: |
+    Открыта страница магазина с возможностью выбора категории товаров
+  test-data: |
+   категория = fragrances
+  steps:
+    - Выбираем fragrances
+  expected-result: |
+    Пользователь должен увидеть товары категории fragrances
+
+- summary: |
+    Проверка поиска товаров по категории groceries
+  requirement: |
+    При выборе определенной категории появляются товары из выбранной категории
+  prerequisites: |
+    Открыта страница магазина с возможностью выбора категории товаров
+  test-data: |
+   категория = groceries
+  steps:
+    - Выбираем groceries
+  expected-result: |
+    Пользователь должен увидеть товары категории groceries
+
+- summary: |
+    Проверка поиска товаров по категории home-decoration
+  requirement: |
+    При выборе определенной категории появляются товары из выбранной категории
+  prerequisites: |
+    Открыта страница магазина с возможностью выбора категории товаров
+  test-data: |
+   категория = home-decoration
+  steps:
+    - Выбираем home-decoration
+  expected-result: |
+    Пользователь должен увидеть товары категории home-decoration
